@@ -10274,7 +10274,7 @@ class Router:
         if isinstance(healthy_deployments, dict):
             if (healthy_deployments.get("model_info") or {}).get("blocked") is True:
                 raise litellm.ServiceUnavailableError(
-                    message=f"Model '{model}' is administratively paused. Contact your proxy admin to unblock it.",
+                    message=f"Model '{model}' is currently paused and cannot accept requests.",
                     model=model,
                     llm_provider="",
                 )
@@ -10538,7 +10538,7 @@ class Router:
             if isinstance(healthy_deployments, dict):
                 if (healthy_deployments.get("model_info") or {}).get("blocked") is True:
                     raise litellm.ServiceUnavailableError(
-                        message=f"Model '{model}' is administratively paused. Contact your proxy admin to unblock it.",
+                        message=f"Model '{model}' is currently paused and cannot accept requests.",
                         model=model,
                         llm_provider="",
                     )
@@ -10712,7 +10712,7 @@ class Router:
         if isinstance(healthy_deployments, dict):
             if (healthy_deployments.get("model_info") or {}).get("blocked") is True:
                 raise litellm.ServiceUnavailableError(
-                    message=f"Model '{model}' is administratively paused. Contact your proxy admin to unblock it.",
+                    message=f"Model '{model}' is currently paused and cannot accept requests.",
                     model=model,
                     llm_provider="",
                 )
@@ -10869,7 +10869,7 @@ class Router:
         if isinstance(healthy_deployments, dict):
             if (healthy_deployments.get("model_info") or {}).get("blocked") is True:
                 raise litellm.ServiceUnavailableError(
-                    message=f"Model '{model}' is administratively paused. Contact your proxy admin to unblock it.",
+                    message=f"Model '{model}' is currently paused and cannot accept requests.",
                     model=model,
                     llm_provider="",
                 )
