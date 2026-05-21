@@ -1439,6 +1439,8 @@ class BaseLLMHTTPHandler:
             document=document,
             optional_params=optional_params,
             headers=headers,
+            api_key=api_key,
+            api_base=api_base,
         )
 
         # All providers return OCRRequestData
@@ -1507,6 +1509,8 @@ class BaseLLMHTTPHandler:
             document=document,
             optional_params=optional_params,
             headers=headers,
+            api_key=api_key,
+            api_base=api_base,
         )
 
         # All providers return OCRRequestData
